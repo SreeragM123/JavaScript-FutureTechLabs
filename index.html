@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 class="demo">Login</h2>
+    <h2 id="hi">HELLO</h2>
+    <h1 class="demo">NICE</h1>
+    <button type="submit" onclick="document.getElementById('hi').style.color='blue'">Change</button>
+    <script>
+        document.getElementsByClassName('demo')[0].innerHTML="HIII";
+        document.getElementById('hi').innerHTML="WORLD";
+        document.getElementsByClassName('demo')[1].innerHTML="HOW R U";
+        document.getElementById('hi').style.fontFamily="arial";
+
+    </script>
+</body>
+</html>

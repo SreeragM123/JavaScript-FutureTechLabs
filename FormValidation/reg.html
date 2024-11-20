@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5;
+}
+
+.reg{
+    justify-content: center;
+    display: flex;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    margin-top: 150px;
+    text-align: center;
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="conpassword"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="conpassword"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.3);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 1px;
+}
+
+
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <div class="reg">
+        <form onsubmit="return validateForm()">
+            <label for="user">Username:</label>
+            <input type="text" id="user" name="uname" ><br><br>
+            <span id="name-error" class="error-message"></span>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" ><br><br>  
+            <span id="email-error" class="error-message"></span>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <span id="pass-error" class="error-message"></span>
+            <label for="conpassword">Confirm Password:</label>
+            <input type="password" id="conpassword" name="conpassword" ><br><br>
+            <span id="conpass-error" class="error-message"></span>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="./reg.js"></script>
+</body>
+</html>
