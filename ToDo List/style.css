@@ -1,0 +1,134 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2cff84;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Main Container */
+  .todo-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+  }
+  
+  /* Header Styles */
+  h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Input Section */
+  .input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  #todo-input {
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  #todo-input:focus {
+    border-color: #4CAF50;
+  }
+  
+  #add-btn {
+    margin-left: 10px;
+    font-size: 1.5rem;
+    color: #4CAF50;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  #add-btn:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Task List Styles */
+  .task-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .task-list li span {
+    cursor: pointer;
+  }
+  
+  
+  .task-list li.done span {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  /* Edit and Delete Button Styles */
+  .edit-btn,
+  .delete-btn {
+    background-color: #ffcc00;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.9rem;
+  }
+  
+  .edit-btn{
+    margin-left: 130px;
+  }
+
+  .edit-btn:hover {
+    background-color: #e0a800;
+  }
+  
+  .delete-btn {
+    background-color: #ff4d4d;
+  }
+  
+  .delete-btn:hover {
+    background-color: #ff1a1a;
+  }
+  
+  /* Alert Styles */
+  #Alert {
+    color: #ff0000;
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+  
